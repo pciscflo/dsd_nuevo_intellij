@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "eda9638d-7cf0-44f3-ad84-fe21120a8a55",
+		"name": "Socios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sociosSinCuotas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/sociosCuotas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sociosCuotas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrarSocio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"dni\": \"23232323\",\r\n        \"nombre\": \"Silvia\",\r\n        \"direccion\": \"Silvia 888\",\r\n        \"correo\": \"silvia@gmail.com\",\r\n        \"fechaNacimiento\": \"10/02/1978\",\r\n        \"dependientes\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/socio",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"socio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuotaxdni",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/cuota/dni/23232323",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cuota",
+						"dni",
+						"23232323"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sociosconMas2Dependientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/sociosDependientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sociosDependientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sociosCuotas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/sociosCuotas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sociosCuotas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuotaxCodigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cuota/codigo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cuota",
+						"codigo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
